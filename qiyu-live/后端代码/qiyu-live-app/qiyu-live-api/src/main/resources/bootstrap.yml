@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: qiyu-live-api
+  cloud:
+    nacos:
+      username: qiyu
+      password: qiyu
+      discovery:
+        server-addr: localhost:8848
+        namespace: 1bc15ccf-f070-482e-8325-c3c46e427aaf
+
+  # Kafka配置，前缀是spring
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      retries: 3
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
