@@ -1,0 +1,2 @@
+2025/05/29 20:28:29 [emerg] 12076#5292: CreateFile() "F:\github_repository\Backend_project\Comments\redis-main\02-实战篇\资料\nginx-1.18.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2025/05/29 20:29:18 [emerg] 3892#2204: CreateFile() "F:\github_repository\Backend_project\Comments\redis-main\02-实战篇\资料\nginx-1.18.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
