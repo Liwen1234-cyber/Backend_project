@@ -17,10 +17,10 @@
       </list>
     </option>
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -33,9 +33,9 @@
   <component name="MavenRunner">
     <option name="jreName" value="11" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2zEHjZQVXVOcxs2bSHzPH30mZ7f" />
   <component name="ProjectViewState">
     <option name="compactDirectories" value="true" />
@@ -62,7 +62,7 @@
     "JUnit.JDBCDemo7_PreparedStatement.testPreparedStatement2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/github_repository/Backend_project/mysql/JDBC/jdbc/src",
+    "last_opened_file_path": "F:/github_repository/Backend_project/jvm/myCode/jvm/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -191,6 +191,7 @@
       <option name="presentableId" value="Default" />
       <updated>1751289450232</updated>
       <workItem from="1751289451327" duration="8886000" />
+      <workItem from="1751551195353" duration="60000" />
     </task>
     <servers />
   </component>
