@@ -1,0 +1,1 @@
+[课程翻译](https://mit-public-courses-cn-translatio.gitbook.io/mit6-824)
