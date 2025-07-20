@@ -1,0 +1,20 @@
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: https://openrouter.ai/api/v1
+      api-key: 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
+      model-name: deepseek/deepseek-r1:free
+      log-requests: true
+      log-responses: true
+    Streaming-chat-model:
+      base-url: https://openrouter.ai/api/v1
+      api-key: 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
+      model-name: deepseek/deepseek-r1:free
+      log-requests: true
+      log-responses: true
+server:
+  port: 8081
+
+logging:
+  level:
+    dev.langchain4j: debug
