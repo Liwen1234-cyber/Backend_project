@@ -1,0 +1,47 @@
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: https://openrouter.ai/api/v1
+      api-key: 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
+      model-name: deepseek/deepseek-chat-v3-0324:free
+      log-requests: true
+      log-responses: true
+    Streaming-chat-model:
+      base-url: https://openrouter.ai/api/v1
+      api-key: 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
+      model-name: deepseek/deepseek-chat-v3-0324:free
+      log-requests: true
+      log-responses: true
+    embedding-model:
+      base-url: https://api.chatanywhere.tech
+      api-key: sk-7N90JuryHXkh8w0jFpnHW6xBigFNJawrBQ0Z7ha3z6UpBRNn
+      model-name: text-embedding-ada-002
+      log-requests: true
+      log-responses: true
+  community:
+    redis:
+      host: localhost
+      port: 6379
+
+server:
+  port: 8081
+
+logging:
+  level:
+    dev.langchain4j: debug
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/volunteer?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+#spring:
+#  data:
+#    redis:
+#      host: localhost
+#      port: 6379
+#      password: 123456
