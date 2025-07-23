@@ -1,0 +1,9 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Jun 04 10:41:35 CST 2021
+spring-webmvc-5.2.10.RELEASE.jar>nexus-aliyun=
+spring-webmvc-5.2.10.RELEASE.pom>maven-public=
+spring-webmvc-5.2.10.RELEASE-sources.jar>nexus-aliyun=
+spring-webmvc-5.2.10.RELEASE.jar>central=
+spring-webmvc-5.2.10.RELEASE.jar>maven-public=
+spring-webmvc-5.2.10.RELEASE.pom>nexus-aliyun=
+spring-webmvc-5.2.10.RELEASE.pom>central=

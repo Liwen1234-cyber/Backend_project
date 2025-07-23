@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jun 01 15:35:27 CST 2021
+maven-plugins-33.pom>nexus-aliyun=
+maven-plugins-33.pom>central=
+maven-plugins-33.pom>maven-public=

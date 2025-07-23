@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon May 31 15:37:21 CST 2021
+maven-resources-plugin-2.6.pom>nexus-aliyun=
+maven-resources-plugin-2.6.jar>nexus-aliyun=
+maven-resources-plugin-2.6.pom>maven-public=
+maven-resources-plugin-2.6.jar>maven-public=

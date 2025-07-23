@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Apr 25 13:22:08 CST 2021
+http\://localhost\:8081/repository/maven-public/.error=Could not transfer artifact org.aspectj\:aspectjweaver\:jar\:sources\:1.9.4 from/to nexus-heima (http\://localhost\:8081/repository/maven-public/)\: Connect to localhost\:8081 [localhost/127.0.0.1, localhost/0\:0\:0\:0\:0\:0\:0\:1] failed\: Connection refused\: connect
+@default-nexus-heima-http\://localhost\:8081/repository/maven-public/.lastUpdated=1619318525263
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1619328128987

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Apr 25 13:22:08 CST 2021
+aspectjweaver-1.9.4.pom>nexus-aliyun=
+aspectjweaver-1.9.4.jar>nexus-aliyun=
+aspectjweaver-1.9.4-sources.jar>nexus-aliyun=

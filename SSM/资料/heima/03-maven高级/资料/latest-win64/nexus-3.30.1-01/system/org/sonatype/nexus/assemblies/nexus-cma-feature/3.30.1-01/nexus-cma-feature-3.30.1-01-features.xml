@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="nexus-cma-feature">
+    <feature name="nexus-cma-feature" description="org.sonatype.nexus.assemblies:nexus-cma-feature" install="featureFlag:enabledByDefault:nexus.orient.store.content" version="3.30.1.01">
+        <details>org.sonatype.nexus.assemblies:nexus-cma-feature</details>
+        <feature version="3.30.1.01">nexus-repository-apt</feature>
+        <feature version="3.30.1.01">nexus-repository-cocoapods</feature>
+        <feature version="3.30.1.01">nexus-repository-conan</feature>
+        <feature version="3.30.1.01">nexus-repository-conda</feature>
+        <feature version="3.30.1.01">nexus-repository-golang</feature>
+        <feature version="3.30.1.01">nexus-repository-p2</feature>
+        <feature version="3.30.1.01">nexus-repository-r</feature>
+        <feature version="3.30.1.01">nexus-restore-apt</feature>
+        <feature version="3.30.1.01">nexus-restore-maven</feature>
+        <feature version="3.30.1.01">nexus-restore-npm</feature>
+        <feature version="3.30.1.01">nexus-restore-pypi</feature>
+        <feature version="3.30.1.01">nexus-restore-p2</feature>
+        <feature version="3.30.1.01">nexus-restore-r</feature>
+        <feature version="3.30.1.01">nexus-restore-raw</feature>
+        <feature version="3.30.1.01">nexus-restore-helm</feature>
+        <feature version="3.30.1.01" prerequisite="false" dependency="false">nexus-repository-helm</feature>
+        <feature version="3.30.1.01" prerequisite="false" dependency="false">nexus-repository-npm</feature>
+        <feature version="3.30.1.01" prerequisite="false" dependency="false">nexus-repository-pypi</feature>
+    </feature>
+    <feature name="nexus-repository-apt" description="org.sonatype.nexus.plugins:nexus-repository-apt" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-apt</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-apt/3.30.1-01</bundle>
+        <bundle>mvn:org.tukaani/xz/1.8</bundle>
+    </feature>
+    <feature name="nexus-repository-r" description="org.sonatype.nexus.plugins:nexus-repository-r" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-r</details>
+        <feature prerequisite="true" dependency="false">wrap</feature>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-r/3.30.1-01</bundle>
+        <bundle>wrap:mvn:se.sawano.java/alphanumeric-comparator/1.4.1</bundle>
+    </feature>
+    <feature name="nexus-repository-cocoapods" description="org.sonatype.nexus.plugins:nexus-repository-cocoapods" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-cocoapods</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-cocoapods/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-repository-conan" description="org.sonatype.nexus.plugins:nexus-repository-conan" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-conan</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-conan/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-repository-conda" description="org.sonatype.nexus.plugins:nexus-repository-conda" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-conda</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-conda/3.30.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-compress/1.20</bundle>
+    </feature>
+    <feature name="nexus-repository-golang" description="org.sonatype.nexus.plugins:nexus-repository-golang" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-golang</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-golang/3.30.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-compress/1.20</bundle>
+    </feature>
+    <feature name="nexus-repository-helm" description="org.sonatype.nexus.plugins:nexus-repository-helm" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-helm</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-helm/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-repository-npm" description="org.sonatype.nexus.plugins:nexus-repository-npm" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-npm</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-npm/3.30.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-compress/1.20</bundle>
+    </feature>
+    <feature name="nexus-repository-pypi" description="org.sonatype.nexus.plugins:nexus-repository-pypi" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-pypi</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-pypi/3.30.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-compress/1.20</bundle>
+        <bundle>mvn:org.tukaani/xz/1.8</bundle>
+        <bundle>mvn:org.jsoup/jsoup/1.9.1</bundle>
+    </feature>
+    <feature name="nexus-repository-p2" description="org.sonatype.nexus.plugins:nexus-repository-p2" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-p2</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-p2/3.30.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-compress/1.20</bundle>
+        <bundle>mvn:org.tukaani/xz/1.8</bundle>
+    </feature>
+    <feature name="nexus-restore-apt" description="org.sonatype.nexus.plugins:nexus-restore-apt" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-apt</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-apt/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-restore-helm" description="org.sonatype.nexus.plugins:nexus-restore-helm" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-helm</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-helm/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-restore-maven" description="org.sonatype.nexus.plugins:nexus-restore-maven" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-maven</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-maven/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-restore-npm" description="org.sonatype.nexus.plugins:nexus-restore-npm" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-npm</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-npm/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-restore-pypi" description="org.sonatype.nexus.plugins:nexus-restore-pypi" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-pypi</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-pypi/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-restore-p2" description="org.sonatype.nexus.plugins:nexus-restore-p2" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-p2</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-p2/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-restore-r" description="org.sonatype.nexus.plugins:nexus-restore-r" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-r</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-r/3.30.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-compress/1.20</bundle>
+    </feature>
+    <feature name="nexus-restore-raw" description="org.sonatype.nexus.plugins:nexus-restore-raw" version="3.30.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-raw</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-raw/3.30.1-01</bundle>
+    </feature>
+</features>

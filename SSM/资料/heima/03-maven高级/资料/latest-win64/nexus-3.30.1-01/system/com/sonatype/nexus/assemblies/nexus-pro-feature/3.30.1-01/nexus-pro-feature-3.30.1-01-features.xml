@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="nexus-pro-feature">
+    <feature name="nexus-pro-feature" description="com.sonatype.nexus.assemblies:nexus-pro-feature" version="3.30.1.01">
+        <details>com.sonatype.nexus.assemblies:nexus-pro-feature</details>
+        <feature prerequisite="true">nexus-core-feature</feature>
+        <feature version="3.30.1.01">nexus-ldap-plugin</feature>
+        <feature version="3.30.1.01">nexus-proui-plugin</feature>
+        <feature version="3.30.1.01">nexus-proximanova-plugin</feature>
+        <feature version="3.30.1.01">nexus-licensing-plugin</feature>
+        <feature version="3.30.1.01">nexus-migration-plugin</feature>
+        <feature version="3.30.1.01">nexus-outreach-plugin</feature>
+        <feature version="3.30.1.01">nexus-rutauth-plugin</feature>
+        <feature version="3.30.1.01">nexus-repository-nuget</feature>
+        <feature version="3.30.1.01">nexus-repository-yum</feature>
+        <feature version="3.30.1.01">nexus-repository-docker</feature>
+        <feature version="3.30.1.01">nexus-clm-plugin</feature>
+        <feature version="3.30.1.01">nexus-crowd-plugin</feature>
+        <feature version="3.30.1.01">nexus-usertoken-plugin</feature>
+        <feature version="3.30.1.01">nexus-staging-plugin</feature>
+        <feature version="3.30.1.01">nexus-blobstore-azure-cloud</feature>
+        <feature version="3.30.1.01">nexus-blobstore-group</feature>
+        <feature version="3.30.1.01">nexus-pro-system-checks-plugin</feature>
+        <feature version="3.30.1.01">nexus-analytics-plugin</feature>
+        <feature version="3.30.1.01">nexus-saml-plugin</feature>
+        <feature version="3.30.1.01">nexus-tags-plugin</feature>
+        <feature version="3.30.1.01">nexus-export-import-plugin</feature>
+        <feature version="3.30.1.01" prerequisite="false" dependency="false">nexus-pro-datastore-plugin</feature>
+        <feature version="3.30.1.01" prerequisite="false" dependency="false">nexus-repository-move-plugin</feature>
+    </feature>
+    <feature name="nexus-ldap-plugin" description="com.sonatype.nexus.plugins:nexus-ldap-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-ldap-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-ldap-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-proui-plugin" description="com.sonatype.nexus.plugins:nexus-proui-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-proui-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-proui-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-proximanova-plugin" description="com.sonatype.nexus.plugins:nexus-proximanova-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-proximanova-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-proximanova-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-clm-plugin" description="com.sonatype.nexus.plugins:nexus-clm-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-clm-plugin</details>
+        <feature prerequisite="true" dependency="false">wrap</feature>
+        <bundle>wrap:mvn:com.sonatype.insight.brain/insight-rm-common/1.107.0-01$Bundle-SymbolicName=insight-rm-common&amp;Fragment-Host=com.sonatype.clm.dto.model</bundle>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-clm-plugin/3.30.1-01</bundle>
+        <bundle>wrap:mvn:com.sonatype.insight.scan/insight-scanner-core/2.28.2-01</bundle>
+        <bundle>wrap:mvn:com.sonatype.insight.scan/insight-scanner-model/2.28.2-01</bundle>
+        <bundle>wrap:mvn:com.sonatype.insight.scan/insight-scanner-model-io/2.28.2-01</bundle>
+        <bundle>mvn:com.thoughtworks.xstream/xstream/1.4.16</bundle>
+        <bundle>wrap:mvn:xpp3/xpp3_min/1.1.4c</bundle>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-healthcheck-base/3.30.1-01</bundle>
+        <bundle>mvn:com.sonatype.clm/com.sonatype.clm.dto.model/1.39.0-01</bundle>
+        <bundle>mvn:org.freemarker/freemarker/2.3.30</bundle>
+        <bundle>mvn:commons-lang/commons-lang/2.6</bundle>
+    </feature>
+    <feature name="nexus-crowd-plugin" description="com.sonatype.nexus.plugins:nexus-crowd-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-crowd-plugin</details>
+        <bundle>wrap:mvn:com.atlassian.crowd.client/atlassian-crowd-rest-client/1.1$Bundle-SymbolicName=atlassian-crowd-rest-client&amp;Fragment-Host=com.sonatype.nexus.plugins.nexus-crowd-plugin</bundle>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-crowd-plugin/3.30.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-lang3/3.11</bundle>
+        <bundle>mvn:com.google.guava/guava/27.1-jre</bundle>
+        <bundle>mvn:com.google.guava/failureaccess/1.0.1</bundle>
+    </feature>
+    <feature name="nexus-licensing-plugin" description="com.sonatype.nexus.plugins:nexus-licensing-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-licensing-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-licensing-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-migration-plugin" description="com.sonatype.nexus.plugins:nexus-migration-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-migration-plugin</details>
+        <feature prerequisite="true" dependency="false">wrap</feature>
+        <bundle>wrap:mvn:com.sonatype.insight.brain/insight-rm-common/1.107.0-01$Bundle-SymbolicName=insight-rm-common&amp;Fragment-Host=com.sonatype.clm.dto.model</bundle>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-migration-plugin/3.30.1-01</bundle>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-healthcheck-base/3.30.1-01</bundle>
+        <bundle>mvn:commons-lang/commons-lang/2.6</bundle>
+        <bundle>mvn:com.sonatype.clm/com.sonatype.clm.dto.model/1.39.0-01</bundle>
+        <bundle>wrap:mvn:com.sonatype.insight.scan/insight-scanner-core/2.28.2-01</bundle>
+        <bundle>wrap:mvn:com.sonatype.insight.scan/insight-scanner-model/2.28.2-01</bundle>
+        <bundle>wrap:mvn:com.sonatype.insight.scan/insight-scanner-model-io/2.28.2-01</bundle>
+        <bundle>mvn:com.thoughtworks.xstream/xstream/1.4.16</bundle>
+        <bundle>wrap:mvn:xpp3/xpp3_min/1.1.4c</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-rest-client/3.30.1-01</bundle>
+        <bundle>mvn:org.jboss.spec.javax.ws.rs/jboss-jaxrs-api_2.1_spec/2.0.1.Final</bundle>
+        <bundle>mvn:com.fasterxml.jackson.dataformat/jackson-dataformat-smile/2.11.4</bundle>
+        <bundle>mvn:com.fasterxml.jackson.core/jackson-core/2.11.4</bundle>
+        <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-smile-provider/2.11.4</bundle>
+        <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.11.4</bundle>
+        <bundle>mvn:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.11.4</bundle>
+        <bundle>mvn:jakarta.activation/jakarta.activation-api/1.2.1</bundle>
+        <bundle>mvn:org.apache.commons/commons-lang3/3.11</bundle>
+    </feature>
+    <feature name="nexus-tags-plugin" description="com.sonatype.nexus.plugins:nexus-tags-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-tags-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-tags-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-export-import-plugin" description="com.sonatype.nexus.plugins:nexus-export-import-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-export-import-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-export-import-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-outreach-plugin" description="com.sonatype.nexus.plugins:nexus-outreach-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-outreach-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-outreach-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-rutauth-plugin" description="com.sonatype.nexus.plugins:nexus-rutauth-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-rutauth-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-rutauth-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-usertoken-plugin" description="com.sonatype.nexus.plugins:nexus-usertoken-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-usertoken-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-usertoken-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-staging-plugin" description="com.sonatype.nexus.plugins:nexus-staging-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-staging-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-staging-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-blobstore-azure-cloud" description="com.sonatype.nexus.plugins:nexus-blobstore-azure-cloud" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-blobstore-azure-cloud</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-blobstore-azure-cloud/3.30.1-01</bundle>
+        <bundle>mvn:commons-io/commons-io/2.8.0</bundle>
+    </feature>
+    <feature name="nexus-blobstore-group" description="com.sonatype.nexus.plugins:nexus-blobstore-group" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-blobstore-group</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-blobstore-group/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-pro-system-checks-plugin" description="com.sonatype.nexus.plugins:nexus-pro-system-checks-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-pro-system-checks-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-pro-system-checks-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-analytics-plugin" description="com.sonatype.nexus.plugins:nexus-analytics-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-analytics-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-analytics-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-saml-plugin" description="com.sonatype.nexus.plugins:nexus-saml-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-saml-plugin</details>
+        <bundle>wrap:mvn:org.keycloak/keycloak-saml-servlet-filter-adapter/12.0.3$Bundle-SymbolicName=org.keycloak.keycloak-servlet-filter-adapter</bundle>
+        <bundle>wrap:mvn:org.keycloak/keycloak-saml-adapter-core/12.0.3$Bundle-SymbolicName=keycloak-saml-adapter-core</bundle>
+        <bundle>wrap:mvn:org.keycloak/keycloak-saml-adapter-api-public/12.0.3$Fragment-Host=keycloak-saml-adapter-core</bundle>
+        <bundle>wrap:mvn:org.keycloak/keycloak-saml-core/12.0.3$Bundle-SymbolicName=keycloak-saml-core</bundle>
+        <bundle>wrap:mvn:org.keycloak/keycloak-saml-core-public/12.0.3$Fragment-Host=keycloak-saml-core</bundle>
+        <bundle>wrap:mvn:org.keycloak/keycloak-adapter-spi/12.0.3$overwrite=merge&amp;Import-Package=org.jboss.logging,*</bundle>
+        <bundle>wrap:mvn:org.keycloak/keycloak-common/12.0.3$overwrite=merge&amp;Import-Package=org.jboss.logging,*</bundle>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-saml-plugin/3.30.1-01</bundle>
+        <bundle>mvn:org.keycloak/keycloak-servlet-adapter-spi/12.0.3</bundle>
+        <bundle>mvn:org.apache.santuario/xmlsec/2.1.4</bundle>
+    </feature>
+    <feature name="nexus-pro-datastore-plugin" description="com.sonatype.nexus.plugins:nexus-pro-datastore-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-pro-datastore-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-pro-datastore-plugin/3.30.1-01</bundle>
+    </feature>
+    <feature name="nexus-repository-docker" description="com.sonatype.nexus.plugins:nexus-repository-docker" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-repository-docker</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-repository-docker/3.30.1-01</bundle>
+        <bundle>mvn:commons-lang/commons-lang/2.6</bundle>
+        <bundle>mvn:org.eclipse.aether/aether-util/1.0.2.v20150114</bundle>
+        <bundle>mvn:org.eclipse.aether/aether-api/1.0.2.v20150114</bundle>
+    </feature>
+    <feature name="nexus-repository-nuget" description="com.sonatype.nexus.plugins:nexus-repository-nuget" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-repository-nuget</details>
+        <feature prerequisite="true" dependency="false">wrap</feature>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-repository-nuget/3.30.1-01</bundle>
+        <bundle>wrap:mvn:org.sonatype.sisu/sisu-odata4j/0.0.7</bundle>
+        <bundle>mvn:org.core4j/core4j/0.5</bundle>
+        <bundle>mvn:joda-time/joda-time/2.10.6</bundle>
+        <bundle>mvn:commons-codec/commons-codec/1.14</bundle>
+        <bundle>wrap:mvn:org.codehaus.plexus/plexus-utils/3.1.0</bundle>
+        <bundle>mvn:commons-fileupload/commons-fileupload/1.4</bundle>
+        <bundle>mvn:commons-io/commons-io/2.8.0</bundle>
+        <bundle>mvn:org.apache.commons/commons-collections4/4.4</bundle>
+        <bundle>mvn:org.eclipse.aether/aether-util/1.0.2.v20150114</bundle>
+        <bundle>mvn:org.eclipse.aether/aether-api/1.0.2.v20150114</bundle>
+        <bundle>wrap:mvn:com.github.zafarkhaja/java-semver/0.9.0</bundle>
+        <bundle>mvn:com.google.guava/guava/27.1-jre</bundle>
+        <bundle>mvn:com.google.guava/failureaccess/1.0.1</bundle>
+    </feature>
+    <feature name="nexus-repository-yum" description="com.sonatype.nexus.plugins:nexus-repository-yum" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-repository-yum</details>
+        <feature prerequisite="true" dependency="false">wrap</feature>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-repository-yum/3.30.1-01</bundle>
+        <bundle>wrap:mvn:org.redline-rpm/redline/1.2.5</bundle>
+        <bundle>mvn:org.apache.commons/commons-compress/1.20</bundle>
+        <bundle>mvn:org.tukaani/xz/1.8</bundle>
+    </feature>
+    <feature name="nexus-repository-move-plugin" description="com.sonatype.nexus.plugins:nexus-repository-move-plugin" version="3.30.1.01">
+        <details>com.sonatype.nexus.plugins:nexus-repository-move-plugin</details>
+        <bundle>mvn:com.sonatype.nexus.plugins/nexus-repository-move-plugin/3.30.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-coreui-plugin/3.30.1-01</bundle>
+    </feature>
+</features>
