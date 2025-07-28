@@ -1,6 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Jun 03 15:44:10 CST 2021
-xercesImpl-2.9.1.jar>nexus-aliyun=
-xercesImpl-2.9.1.pom>nexus-aliyun=
-xercesImpl-2.9.1.jar>central=
-xercesImpl-2.9.1.pom>central=

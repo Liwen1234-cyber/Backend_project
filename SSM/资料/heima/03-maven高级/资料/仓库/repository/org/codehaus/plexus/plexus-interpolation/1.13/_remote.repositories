@@ -1,6 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Mon May 31 15:37:43 CST 2021
-plexus-interpolation-1.13.jar>maven-public=
-plexus-interpolation-1.13.pom>nexus-aliyun=
-plexus-interpolation-1.13.jar>nexus-aliyun=
-plexus-interpolation-1.13.pom>maven-public=

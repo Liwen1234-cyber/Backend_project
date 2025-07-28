@@ -1,7 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Mon May 31 15:36:49 CST 2021
-spring-core-5.2.10.RELEASE.jar>nexus-aliyun=
-spring-core-5.2.10.RELEASE.pom>nexus-aliyun=
-spring-core-5.2.10.RELEASE-sources.jar>nexus-aliyun=
-spring-core-5.2.10.RELEASE.jar>maven-public=
-spring-core-5.2.10.RELEASE.pom>maven-public=

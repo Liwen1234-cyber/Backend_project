@@ -1,6 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Mon May 31 15:37:27 CST 2021
-maven-deploy-plugin-2.7.pom>nexus-aliyun=
-maven-deploy-plugin-2.7.jar>nexus-aliyun=
-maven-deploy-plugin-2.7.pom>maven-public=
-maven-deploy-plugin-2.7.jar>maven-public=
